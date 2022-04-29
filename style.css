@@ -12,6 +12,13 @@ nav a
 {
     margin-right: 4vw;
 }
+@media (min-width:989px) {
+    .collapse
+    {
+        position: fixed;
+        right: 4vw;
+    }
+}
 .nav-link
 {
     padding: 2vh;
