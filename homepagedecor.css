@@ -5,6 +5,7 @@
     position: sticky;
     top: 0vh;
 }
+
 #symbol
 {
     background-color: black;
@@ -14,8 +15,14 @@
     padding: 1vh;
     padding-left: 2vh;
     padding-right: 2vh;
-    margin-left: 2vh;
+    margin-left: 0vh;
 
+}
+@media (max-width:989px) {
+    #symbol
+    {
+        display: none;
+    }
 }
 #symbol a
 {
@@ -24,19 +31,13 @@
 }
 #reports
 {
-    display: flex;
-    flex-direction: row;
-}
-#graphs
-{ 
-    height: auto;
-    width: 90%;
-    background-color: #a2d5ab;
+    margin-top: 0vh;
+    background-image: linear-gradient(to bottom right, #a2d5ab, rgb(246, 246, 5));
+    padding: 5vh;
 }
 #gph-grid
 {
     display: grid;
-    padding-top: 10vh;
     padding-left: 5vh;
     padding-right: 5vh;
     padding-bottom: 5vh;
@@ -44,21 +45,33 @@
     grid-gap: 2vh;
     grid-row-gap: 5vh;
 }
-#gph-grid div
+#gph-grid div div
 {
     display: flex;
-    height: 20vh;
-    background-image: url('signup.jpg');
+    height: 50vh;
+    background-color: rgb(39, 21, 93);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+#gph-grid div h2
+{
+    color: whitesmoke;
+    font-weight: 500;
+}
+#gph-grid div h4
+{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    font-weight: 700;
+}
 #uploadbtn
 {
-    background-color: #e5efc1;
-    display: flex;
+    /* background-color: #e5efc1; */
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
     width: 10%;
     
@@ -69,16 +82,16 @@
     font-size: 3vh;
     color: black;
     font-family: 'Lato', sans-serif;
-    margin: 2vh;
-    padding: 2vh;
-    background-color: #557b83;
+    margin: 1vh;
+    padding: 1vh;
+    /* background-color: #557b83; */
     border-radius: 20px;
 }
 #background
 {
     width: 100%;
     position: absolute;
-    top: 7.2vh;
+    top: 7.4vh;
     right: 0vh;
     transition: all 1s;
     z-index: 5;
@@ -92,8 +105,8 @@
   width: 70%;
   height: 80%;
   border-radius: 10vh;
-  position: absolute;
-  top: 10%;
+  position: fixed;
+  top: 13%;
   z-index: 9;
   left: 15%;
   overflow-y: auto;
@@ -114,7 +127,7 @@
   grid-template-columns: auto auto ;
   grid-row-gap: 5vh;
   grid-gap: 4vh;
-
+    user-select: none;
 }
 .close
 {
@@ -124,5 +137,4 @@
     background-color: transparent;
     border: none;
 }
-
 
