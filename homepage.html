@@ -12,11 +12,14 @@
       @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
       </style>
 
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
       
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     
 
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="homepagedecor.css">
     <title>Hello, world!</title>
@@ -58,8 +61,11 @@
     </nav>
       <!-- navbar ended -->
     <section id="reports">
-      <div id="graphs">
+        <div id="graphs">
+          <h1 style="margin: 2vh;color: blueviolet;">MY REPORTS :</h1>
+          <br>
           <div id="gph-grid">
+            <div><h2>N/A</h2></div>
             <div><h2>N/A</h2></div>
             <div><h2>N/A</h2></div>
             <div><h2>N/A</h2></div>
@@ -70,9 +76,33 @@
       <div id="uploadbtn">
         <button onclick="w3.show('#upload'),w3.show('#background')">Upload</button>
       </div>
-      <div>
+      <!-- form -->
+    <div id="upload">
+      <div id="container-upload">
+        <button class="close" onclick="location.reload();"><span class="material-symbols-outlined" style="color: red;">
+          close
+          </span></button>
+        <div>
+        <h4 id="date" style="color:white;position: absolute; right: 8vw;"></h4>
+      </div>
+        <form action="" id="upload-form">
+          <label for="bp">BLOOD PRESSURE :</label>
+          <input type="value" name="bp" placeholder="Ener Your Blood Pressure">
+          <label for="sugar">Sugar level :</label>
+          <input type="value" name="sugar" placeholder="Enter Your Sugar Level">
+          <label for="chelo">Cholesterol</label>
+          <input type="value" name="chelo" placeholder="Enter Your Cholestrol levels">
+          <label for="bmi">BMI :</label>
+          <input type="value" name="bmi" placeholder="Enter Your BMI value">
+          <label for="smoke">Do You Smoke?</label>
+          <input type="text" name="smoke" placeholder="Enter Yes or NO">
+          <label for="drink">Do you Drink?</label>
+          <input type="text" name="drink" placeholder="Enter Yes or NO">
+          <input type="submit" style="padding: 2vh;border-radius: 3vh; background-color: black; color: white; ">
+        </form>
 
       </div>
+    </div>
       </section>
       <div id="background" ></div>   
 
