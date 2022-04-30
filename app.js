@@ -1,4 +1,5 @@
-function movingapart()
-{
-    window.location.href= "homepage.html";
-}
+function my(){
+      
+    var oh= document.getElementById('reports').getBoundingClientRect().height;
+    document.getElementById('background').setAttribute("style",`height:${oh}px;`);
+    }
