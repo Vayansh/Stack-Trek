@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+#login
+{
+    background-color: black;
+}    
+#bckgrdphoto-1
+{
+    background-image: url('loginpagephoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 92vh;
+    opacity: 0.3;
+}
+#options
+{
+    position: absolute;
+    top: 33vh;
+    right: auto;
+    left: 25%;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+#options div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#options button
+{
+    margin: 2vh;
+    padding: 4vh;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+#options button a
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+main
+{
+    position: absolute;
+    top: 25vh;
+    right: 32%;
+    display: none;
+}
+#login_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.form_class {
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+.close
+{
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+    background-color: transparent;
+    border: none;
+}
+.form_div {
+    text-transform: uppercase;
+}
+.form_div > label {
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+.info_div {
+    text-align: center;
+    margin-top: 20px;
+}
+.info_div {
+    letter-spacing: 1px;
+}
+.field_class {
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.submit_class {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #00C897;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* #services
+{
+    height: 50vh;
+    background-color: black;
+}
+#portfolio
+{
+    height: 50vh;
+    background-color: blue;
+}
+#about
+{
+    height: 50vh;
+    background-color: aquamarine;
+} */
