@@ -10,7 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 92vh;
+    height: 92.5vh;
     opacity: 0.3;
 }
 #options
@@ -22,6 +22,7 @@
     width: 50%;
     padding: 10px;
     text-align: center;
+    user-select: none;
 }
 #options div
 {
@@ -35,11 +36,13 @@
     padding: 4vh;
     background-color: aquamarine;
     border-radius: 20px;
+    transition: all 1s;
 }
 #options button a
 {
     text-decoration: none;
     color: black;
+    font-size: 2.7vh;
     font-family: 'Lato', sans-serif;
 }
 main
@@ -48,6 +51,10 @@ main
     top: 25vh;
     right: 32%;
     display: none;
+    transition: all 2s;
+    transition-timing-function: ease-in;
+    z-index: 9;
+    user-select: none;
 }
 #login_container{
     display: flex;
@@ -111,7 +118,18 @@ main
     box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
   cursor: pointer;
 }
-
+#background
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+    transition: all 1s;
+    z-index: 5;
+    background-color: rgb(0,0,0,0.7);
+    display: none;
+}
 
 
 
