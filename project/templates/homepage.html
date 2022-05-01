@@ -124,13 +124,14 @@
         <div>
         <h4 id="date" style="color:white;position: absolute; right: 8vw;"></h4>
       </div>
-        <form action="" id="upload-form">
+        <form method="POST" action="" id="upload-form">
+        {% csrf_token %} 
           <label for="bp">BLOOD PRESSURE :</label>
           <input type="value" name="bp" placeholder="Ener Your Blood Pressure">
           <label for="sugar">Sugar level :</label>
           <input type="value" name="sugar" placeholder="Enter Your Sugar Level">
           <label for="chelo">Cholesterol</label>
-          <input type="value" name="chelo" placeholder="Enter Your Cholestrol levels">
+          <input type="value" name="chole" placeholder="Enter Your Cholestrol levels">
           <label for="bmi">BMI :</label>
           <input type="value" name="bmi" placeholder="Enter Your BMI value">
           <label for="smoke">Do You Smoke?</label>
