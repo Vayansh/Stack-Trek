@@ -18,6 +18,13 @@
     margin-left: 0vh;
 
 }
+@media (min-width:989px) {
+    .collapse
+    {
+        position: sticky;
+       transform: translateX(59vw);
+    }
+}
 @media (max-width:989px) {
     #symbol
     {
@@ -32,11 +39,27 @@
 #reports
 {
     margin-top: 0vh;
-    background-image: linear-gradient(to bottom right, #a2d5ab, rgb(246, 246, 5));
+    background: linear-gradient(-45deg, #ffafbd,#ffc3a0,  #FF5349, #f678a9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    
+    /* background-image: linear-gradient(to bottom right, #a2d5ab, rgb(246, 246, 5)); */
     padding: 5vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 #gph-grid
 {
+
     display: grid;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -47,6 +70,7 @@
 }
 #gph-grid div div
 {
+    border-radius: 15px;
     display: flex;
     height: 50vh;
     background-color: rgb(39, 21, 93);
@@ -138,3 +162,7 @@
     border: none;
 }
 
+#bp_gph
+{
+    background-image: url("index.png");
+}

@@ -5,4 +5,5 @@ function my(){
     document.getElementById('report-back').setAttribute("style",`height: ${oh}px;`)    
 }
 const d = new Date(); 
-document.getElementById('date').innerHTML= "Date: "+d.getDay() + "-" +d.getMonth() + "-" + d.getFullYear();
+const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById('date').innerHTML= "Date: "+d.getDate() + "-" +month[d.getMonth()] + "-" + d.getFullYear();

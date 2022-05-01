@@ -29,7 +29,7 @@ nav a
     .collapse
     {
         position: sticky;
-       transform: translateX(55vw);
+       transform: translateX(70vw);
     }
 }
 .nav-link
