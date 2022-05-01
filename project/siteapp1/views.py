@@ -17,7 +17,8 @@ def MyReports(request):
     return HttpResponse("Your reports")
 
 def landing(request):
-    return render(request, 'index.html')
+    if request.method!="POST":
+        return render(request, 'index.html')
     if request.method == "POST":
         if 'signupbutton' in request.POST:
            username = request.POST.get('username')
@@ -35,4 +36,6 @@ def landing(request):
            user = authenticate(username=username, password=password)
            if user is not None:
                 return render(request, 'homepage.html')
+           else:
+               return render(request, 'index.html')
     
